@@ -3,7 +3,7 @@
     <head>
         <title>HTML5 Canvas Winning Wheel</title>
         <link rel="stylesheet" href="main.css" type="text/css" />
-        <script type="text/javascript" src="../../Winwheel.js"></script>
+        <script type="text/javascript" src="Winwheel.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     </head>
     <body>
@@ -79,7 +79,15 @@
                     'type'     : 'spinToStop',
                     'duration' : 5,     // Duration in seconds.
                     'spins'    : 8,     // Number of complete spins.
-                    'callbackFinished' : alertPrize
+                    'callbackFinished' : alertPrize,
+                    'callbackSound'    : playSound,   // Called when the tick sound is to be played.
+                    'soundTrigger'     : 'pin'        // Specify pins are to trigger the sound.
+                },
+                'pins' :                // Turn pins on.
+                {
+                    'number'     : 8,
+                    'fillStyle'  : 'silver',
+                    'outerRadius': 4,
                 }
             });
 
