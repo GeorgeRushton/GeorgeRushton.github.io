@@ -2,3 +2,4 @@
 Wheel of Fortune
 - Added Base
 - Added Winwheel.js
+- Added Image examples
