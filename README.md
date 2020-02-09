@@ -5,3 +5,4 @@ Wheel of Fortune
 - Added Image examples
 - Adjusted image ref
 - added https ref
+- added playsound function
