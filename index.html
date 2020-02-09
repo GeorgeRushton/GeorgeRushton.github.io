@@ -91,6 +91,22 @@
                 }
             });
 
+            // -----------------------------------------------------------------
+            // This function is called when the segment under the prize pointer changes
+            // we can play a small tick sound here like you would expect on real prizewheels.
+            // -----------------------------------------------------------------
+            let audio = new Audio('tick.mp3');  // Create audio object and load tick.mp3 file.
+
+            function playSound()
+            {
+                // Stop and rewind the sound if it already happens to be playing.
+                audio.pause();
+                audio.currentTime = 0;
+
+                // Play the sound.
+                audio.play();
+            }
+
             // Vars used by the code in this page to do power controls.
             let wheelPower    = 0;
             let wheelSpinning = false;
@@ -157,22 +173,6 @@
                     // the current animation. The user will have to reset before spinning again.
                     wheelSpinning = true;
                 }
-            }
-
-            // -----------------------------------------------------------------
-            // This function is called when the segment under the prize pointer changes
-            // we can play a small tick sound here like you would expect on real prizewheels.
-            // -----------------------------------------------------------------
-            let audio = new Audio('tick.mp3');  // Create audio object and load tick.mp3 file.
-
-            function playSound()
-            {
-                // Stop and rewind the sound if it already happens to be playing.
-                audio.pause();
-                audio.currentTime = 0;
-
-                // Play the sound.
-                audio.play();
             }
 
             // -------------------------------------------------------
