@@ -4,3 +4,4 @@ Wheel of Fortune
 - Added Winwheel.js
 - Added Image examples
 - Adjusted image ref
+- added https ref
